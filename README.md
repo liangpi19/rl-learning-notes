@@ -12,10 +12,10 @@ intro：强化学习小白一周学习路径，涵盖强化学习基础、DPO、
 from transformers import AutoModelForSequenceClassification
 model = AutoModel.from_pretrained("Qwen/Qwen2-7B")
 reward_model = AutoModelForSequenceClassification.from_pretrained("Qwen/Qwen2-7B", num_labels=1)
-# 输入文本对 (x, y1, y2)，计算偏好损失
+# 输入文本对 (x, y1, y2)，计算偏好损失```
 
 第二次实践示例
-、、、python
+```python
 from trl import DPOTrainer
 dpo_trainer = DPOTrainer(
     model=Qwen2_model,
@@ -23,4 +23,4 @@ dpo_trainer = DPOTrainer(
     args=training_args,
     train_dataset=preference_data,
 )
-dpo_trainer.train()
+dpo_trainer.train()```
