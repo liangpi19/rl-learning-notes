@@ -7,9 +7,9 @@ intro：强化学习小白一周学习路径，涵盖强化学习基础、DPO、
 | DAY5-6 6月10日 | GRPO（Group Relative Policy Optimization）​ | 内容6 | 内容3 | 
 | DAY7-8 6月12日 | 结合Qwen2-Instruct/Qwen2-Audio​| 内容6 | 内容3 |  
 
+第一次实践示例
 ```python
-def add(a, b):
-    return a + b
-
-result = add(3, 5)
-print(f"结果: {result}")
+from transformers import AutoModelForSequenceClassification
+model = AutoModel.from_pretrained("Qwen/Qwen2-7B")
+reward_model = AutoModelForSequenceClassification.from_pretrained("Qwen/Qwen2-7B", num_labels=1)
+# 输入文本对 (x, y1, y2)，计算偏好损失
