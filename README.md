@@ -6,3 +6,10 @@ intro：强化学习小白一周学习路径，涵盖强化学习基础、DPO、
 | DAY3-4 6月8日 | DPO（Direct Preference Optimization） | 内容6 | 内容3 | 
 | DAY5-6 6月10日 | GRPO（Group Relative Policy Optimization）​ | 内容6 | 内容3 | 
 | DAY7-8 6月12日 | 结合Qwen2-Instruct/Qwen2-Audio​| 内容6 | 内容3 |  
+
+```python
+def add(a, b):
+    return a + b
+
+result = add(3, 5)
+print(f"结果: {result}")
