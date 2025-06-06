@@ -41,3 +41,8 @@ std_r = np.std(rewards)
 advantages = [(r - mean_r) / (std_r + 1e-8) for r in rewards]
 # 策略更新（类似PPO但无需价值网络）
 loss = -torch.mean(advantages * log_probs)
+
+##关键资源
+强化学习蘑菇书https://github.com/datawhalechina/easy-rl
+DPO原论文：Direct Preference Optimization (ICLR 2024)
+GRPO：DeepSeek-R1 (arXiv:2501.12948)
